@@ -27,7 +27,7 @@
 				## The Dev Talk Show
 
 				The Dev Talk Show is now live before your daily standup!
-				- Starts between 7:45a-8:00a, Ends at 9:00a, No set schedule yet (sorry)
+				- Starts around 7:45a, Ends at 9:00a, No set schedule yet (sorry)
 				- https://twitch.tv/thedevtalkshow
 				- https://youtube.com/thedevtalkshow
 				- [Follow @TheDevTalkShow on Twitter](https://twitter.com/thedevtalkshow)
@@ -104,8 +104,19 @@
 
 				This works in Server Side Rendering (Static Render Mode) and is where it really stands out!
 
-				(Note for forms this is an opt-in behavior beginning in RC2)
+				From the Docs: [Enhanced navigation and form handling](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?preserve-view=true&view=aspnetcore-8.0#enhanced-navigation-and-form-handling)
+			</section>
+			<section data-markdown>
+				### Enhanced Form Handling
+				For forms this is opt-in behavior (beginning in RC2)
 
+				Enhanced navigation: Blazor automatically intercepts the request and calls server-side code.
+				Blazor patches the updates into the DOM.
+
+				Opt in with: 
+				- `data-enhance` attribute in `&ltform>`
+				- `Enhance` attribute in `&ltEditForm>`
+				
 				From the Docs: [Enhanced navigation and form handling](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?preserve-view=true&view=aspnetcore-8.0#enhanced-navigation-and-form-handling)
 			</section>
 			<section data-markdown>
@@ -118,6 +129,18 @@
 					
 				From the Docs: [Render Razor components outside of ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-components-outside-of-aspnetcore?view=aspnetcore-8.0)
 			</section>
+			<section data-markdown>
+				### Identity UI Components
+
+				- Blazor generates a Blazor-based Identity UI
+					- Previously based on Razor Pages
+					- Currently select Individual Accounts
+						- More guidance and samples to come
+					
+				From the Blog Post: [Blazor Identity UI](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-rc-2/#identity)
+				
+				From the Docs: [Blazor Identity UI](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0?view=aspnetcore-8.0#blazor-identity-ui)
+			</section>			
 		</div>
 	</div>
 
